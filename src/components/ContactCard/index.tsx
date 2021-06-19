@@ -1,10 +1,13 @@
 import { ContactList } from "components/ContactList";
-import { useReducer } from "react";
-import { contactReducer, initialState } from "reducer/ContactReducer";
+import { useContacts } from "hooks/useContacts";
 
 export const ContactCard = () => {
 
-    const [state, dispatch] = useReducer(contactReducer, initialState);
+    const { contacts, isLoading, error } = useContacts();
+
+    if (isLoading) return <p>Loading...</p>
+    if (error !== null) return <p>There was an error</p>
+    if (contacts?.length === 0) return <p>Contact list is empty.</p>
 
     return (
         <div className="contacts">
@@ -15,7 +18,7 @@ export const ContactCard = () => {
                 </div>
             </div>
             <div className="contacts__body">
-                <ContactList contacts={state.contacts} />
+                <ContactList contacts={contacts} />
             </div>
         </div>
     )
