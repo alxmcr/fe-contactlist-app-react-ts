@@ -1,6 +1,6 @@
-import './ContactForm.styles.css'
+import './ContactSearchForm.styles.css'
 
-export const ContactForm = () => {
+export const ContactSearchForm = () => {
     return (
         <form className="contacts__form">
             <label htmlFor="name" className="contacts__label">Name:</label>

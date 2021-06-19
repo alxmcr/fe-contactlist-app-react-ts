@@ -1,5 +1,5 @@
-import { ContactForm } from "components/ContactForm";
 import { ContactList } from "components/ContactList";
+import { ContactSearchForm } from "components/ContactSearchForm";
 import { useContacts } from "hooks/useContacts";
 import './ContactCard.styles.css';
 
@@ -18,7 +18,7 @@ export const ContactCard = () => {
                     <h1 className="contacts__title">Contacts</h1>
                     <i className="fas fa-plus contacts__icon--plus"></i>
                 </div>
-                <ContactForm />
+                <ContactSearchForm />
             </div>
             <div className="contacts__body">
                 <ContactList contacts={contacts} />
