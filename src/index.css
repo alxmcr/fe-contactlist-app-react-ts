@@ -19,7 +19,7 @@ body {
   flex-direction: row;
   font-family: "Open Sans", sans-serif;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   width: 100%;

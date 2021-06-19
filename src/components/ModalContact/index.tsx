@@ -1,4 +1,7 @@
-export const ModalContact = () => {
+import { ModalContactProps } from "types/AppTypes/AppTypes"
+import './ModalContact.styles.css'
+
+export const ModalContact = ({ children }: ModalContactProps) => {
     return (
         <section className="container" id="container-modal-info">
             <div className="modal">
@@ -13,11 +16,7 @@ export const ModalContact = () => {
                     <p className="modal__details">Enter your password to pick up where you left off</p>
                 </div>
                 <div className="modal__body">
-                    <form className="modal__form">
-                        <label htmlFor="password" className="modal__label">Password</label>
-                        <input type="password" className="modal__input" />
-                        <button className="modal__button modal__button--resume">RESUME</button>
-                    </form>
+                    {children}
                 </div>
             </div>
         </section>

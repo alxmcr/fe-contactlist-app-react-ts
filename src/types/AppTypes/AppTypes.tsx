@@ -16,3 +16,7 @@ export type ContactProps = {
 export type ContactsProps = {
     contacts: ContactType[]
 }
+
+export type ModalContactProps = {
+    children: React.ReactNode
+}

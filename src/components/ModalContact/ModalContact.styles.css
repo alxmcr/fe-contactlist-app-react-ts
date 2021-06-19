@@ -1,0 +1,35 @@
+.modal {
+  background-color: #e7e7e7;
+  border-radius: 0.5rem;
+  height: 20rem;
+  padding: 1rem 2rem;
+  pointer-events: auto;
+  width: 20rem;
+}
+
+.modal__button {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+}
+
+.modal__button--resume {
+  background-color: #e43e59;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.modal__description {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.modal__header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

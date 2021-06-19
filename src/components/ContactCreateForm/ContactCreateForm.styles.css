@@ -1,0 +1,25 @@
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.modal__icon {
+  color: #e43e59;
+}
+
+.modal__input {
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.modal__input:focus {
+  border: 1px solid #e43e59;
+}
+
+.modal__label {
+  display: block;
+}
