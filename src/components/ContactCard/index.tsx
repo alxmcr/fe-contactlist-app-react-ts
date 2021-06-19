@@ -1,3 +1,4 @@
+import { ContactForm } from "components/ContactForm";
 import { ContactList } from "components/ContactList";
 import { useContacts } from "hooks/useContacts";
 import './ContactCard.styles.css';
@@ -17,6 +18,7 @@ export const ContactCard = () => {
                     <h1 className="contacts__title">Contacts</h1>
                     <i className="fas fa-plus contacts__icon--plus"></i>
                 </div>
+                <ContactForm />
             </div>
             <div className="contacts__body">
                 <ContactList contacts={contacts} />

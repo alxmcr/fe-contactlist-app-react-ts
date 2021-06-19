@@ -1,0 +1,33 @@
+.contacts__btn {
+  appearance: none;
+  background-color: #01aefe;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  height: 1.7rem;
+  width: 1.9rem;
+}
+
+.contacts__input {
+  background-color: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  display: block;
+  outline: none;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.contacts__label {
+  font-size: 0.75rem;
+}
+
+.contacts__search {
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  padding: 0.25rem;
+}
