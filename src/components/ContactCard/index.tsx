@@ -16,7 +16,9 @@ export const ContactCard = () => {
             <div className="contacts__header">
                 <div className="contacts__heading">
                     <h1 className="contacts__title">Contacts</h1>
-                    <i className="fas fa-plus contacts__icon--plus"></i>
+                    <button className="contacts__btn contacts__btn--plus">
+                        <i className="fas fa-plus"></i>
+                    </button>
                 </div>
                 <ContactSearchForm />
             </div>

@@ -1,12 +1,20 @@
 .contacts__btn {
   appearance: none;
-  background-color: #01aefe;
+  background-color: transparent;
   border: none;
   border-radius: 50%;
   color: #fff;
   display: block;
   height: 1.7rem;
   width: 1.9rem;
+}
+
+.contacts__btn--plus {
+  color: #01aefe;
+}
+
+.contacts__btn--search {
+  background-color: #01aefe;
 }
 
 .contacts__input {
