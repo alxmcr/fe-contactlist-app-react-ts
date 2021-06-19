@@ -13,6 +13,13 @@ export type ContactProps = {
     contact: ContactType
 }
 
+export type ContactCardProps = {
+    setShowModal: (showModal: boolean) => void
+}
+export type ModalContainerProps = {
+    showModal: boolean
+}
+
 export type ContactsProps = {
     contacts: ContactType[]
 }
