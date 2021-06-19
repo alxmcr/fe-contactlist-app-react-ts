@@ -1,15 +1,13 @@
 import { ContactCard } from 'components/ContactCard';
-import { ContactCreateForm } from "components/ContactCreateForm";
-import { ModalContact } from 'components/ModalContact';
+import { ModalContainer } from 'components/ModalContainer';
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
       <ContactCard />
-      <ModalContact>
-        <ContactCreateForm />
-      </ModalContact>
+      <ModalContainer />
     </div>
   );
 }
