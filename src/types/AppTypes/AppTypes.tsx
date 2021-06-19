@@ -5,7 +5,7 @@ export type ContactType = {
     photo: string
 }
 
-export type ContactList = {
+export type ContactsState = {
     contacts: ContactType[]
 }
 
@@ -13,6 +13,6 @@ export type ContactProps = {
     contact: ContactType
 }
 
-export type ContactListProps = {
+export type ContactsProps = {
     contacts: ContactType[]
 }

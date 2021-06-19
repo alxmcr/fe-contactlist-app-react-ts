@@ -1,7 +1,7 @@
 import { Contact } from "components/Contact"
-import { ContactListProps } from "types/AppTypes/AppTypes"
+import { ContactsProps } from "types/AppTypes/AppTypes"
 
-export const ContactList = ({ contacts }: ContactListProps) => {
+export const ContactList = ({ contacts }: ContactsProps) => {
     return (
         <div>
             {

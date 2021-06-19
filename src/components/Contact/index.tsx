@@ -4,7 +4,7 @@ export const Contact = ({ contact }: ContactProps) => {
     return (
         <div className="contacts__contact" id={contact.id}>
             <img src={contact.photo}
-                alt={`Photo by ${contact.name}`}
+                alt={`${contact.name}-${contact.id}`}
                 className="contacts__photo"
             />
             <div className="contacts__info">

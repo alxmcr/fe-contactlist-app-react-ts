@@ -1,4 +1,11 @@
+import { ContactList } from "components/ContactList";
+import { useReducer } from "react";
+import { contactReducer, initialState } from "reducer/ContactReducer";
+
 export const ContactCard = () => {
+
+    const [state, dispatch] = useReducer(contactReducer, initialState);
+
     return (
         <div className="contacts">
             <div className="contacts__header">
@@ -6,17 +13,9 @@ export const ContactCard = () => {
                     <h1 className="contacts__title">Contacts</h1>
                     <i className="fas fa-plus contacts__icon--plus"></i>
                 </div>
-                <form className="contacts__form">
-                    <label htmlFor="name" className="contacts__label">Name:</label>
-                    <div className="contacts__search">
-                        <input type="text" name="name" id="name" placeholder="Search" className="contacts__input" required />
-                        <button className="contacts__btn contacts__btn--search">
-                            <i className="fas fa-search"></i>
-                        </button>
-                    </div>
-                </form>
             </div>
             <div className="contacts__body">
+                <ContactList contacts={state.contacts} />
             </div>
         </div>
     )
