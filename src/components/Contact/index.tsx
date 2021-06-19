@@ -1,4 +1,5 @@
 import { ContactProps } from "../../types/AppTypes/AppTypes"
+import './Contact.styles.css'
 
 export const Contact = ({ contact }: ContactProps) => {
     return (

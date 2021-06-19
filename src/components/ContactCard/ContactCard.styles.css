@@ -1,0 +1,24 @@
+.contacts {
+  background-color: #e3f0f4;
+  border-radius: 0.5rem;
+  height: 22rem;
+  padding: 0 2rem;
+  width: 20rem;
+}
+
+.contacts__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.contacts__header {
+  margin: 0.5rem 0;
+}
+
+.contacts__heading {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

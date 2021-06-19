@@ -1,5 +1,6 @@
 import { ContactList } from "components/ContactList";
 import { useContacts } from "hooks/useContacts";
+import './ContactCard.styles.css';
 
 export const ContactCard = () => {
 
