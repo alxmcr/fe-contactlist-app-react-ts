@@ -5,7 +5,7 @@
 }
 
 .modal__icon {
-  color: #e43e59;
+  color: rgb(1, 174, 254);
 }
 
 .modal__input {
@@ -17,7 +17,7 @@
 }
 
 .modal__input:focus {
-  border: 1px solid #e43e59;
+  border: 1px solid rgb(1, 174, 254);
 }
 
 .modal__label {

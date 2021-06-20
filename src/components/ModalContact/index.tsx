@@ -16,6 +16,7 @@ export const ModalContact = ({ children, setShowModal }: ModalContactProps) => {
                 </button>
             </div>
             <div className="modal__body">
+                <p className="modal__title">Create a contact</p>
                 {children}
             </div>
         </div>

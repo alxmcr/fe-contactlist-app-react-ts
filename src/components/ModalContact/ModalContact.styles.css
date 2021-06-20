@@ -1,8 +1,8 @@
 .modal {
-  background-color: #e7e7e7;
+  background-color: #e3f0f4;
   border-radius: 0.5rem;
-  height: 20rem;
-  padding: 1rem 2rem;
+  height: 19rem;
+  padding: 2rem 2.2rem;
   pointer-events: auto;
   width: 20rem;
 }
@@ -14,7 +14,7 @@
 }
 
 .modal__button--resume {
-  background-color: #e43e59;
+  background-color: rgb(1, 174, 254);
   border-radius: 0.5rem;
   color: #fff;
   font-weight: 700;
@@ -32,4 +32,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.modal__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 1rem 0;
 }
