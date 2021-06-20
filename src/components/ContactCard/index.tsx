@@ -1,17 +1,9 @@
 import { ContactList } from "components/ContactList";
 import { ContactSearchForm } from "components/ContactSearchForm";
-import { useContacts } from "hooks/useContacts";
 import { ContactCardProps } from "types/AppTypes/AppTypes";
 import './ContactCard.styles.css';
 
-export const ContactCard = ({ setShowModal }: ContactCardProps) => {
-
-    const { contacts, isLoading, error } = useContacts();
-
-    if (isLoading) return <p>Loading...</p>
-    if (error !== null) return <p>There was an error</p>
-    if (contacts?.length === 0) return <p>Contact list is empty.</p>
-
+export const ContactCard = ({ state, setShowModal }: ContactCardProps) => {
     const handleShowModal = () => {
         console.log("Add..");
         setShowModal(true);
@@ -29,7 +21,7 @@ export const ContactCard = ({ setShowModal }: ContactCardProps) => {
                 <ContactSearchForm />
             </div>
             <div className="contacts__body">
-                <ContactList contacts={contacts} />
+                <ContactList contacts={state.contacts} />
             </div>
         </div>
     )

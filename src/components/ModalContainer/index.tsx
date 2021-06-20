@@ -3,12 +3,18 @@ import { ModalContact } from 'components/ModalContact';
 import { ModalContainerProps } from "types/AppTypes/AppTypes";
 import './ModalContainer.styles.css';
 
-export const ModalContainer = ({ showModal, setShowModal }: ModalContainerProps) => {
-    const classContainer = showModal ? `container container--show` : `container`
+
+export const ModalContainer = ({
+    dispatch,
+    showModal,
+    setShowModal
+}: ModalContainerProps) => {
+    const classContainer = showModal ? `container container--show` : `container`;
+
     return (
         <section className={classContainer} id="container-modal-info">
             <ModalContact setShowModal={setShowModal}>
-                <ContactCreateForm />
+                <ContactCreateForm dispatch={dispatch} />
             </ModalContact>
         </section>
     )

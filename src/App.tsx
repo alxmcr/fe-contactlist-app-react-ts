@@ -1,15 +1,21 @@
 import { ContactCard } from 'components/ContactCard';
 import { ModalContainer } from 'components/ModalContainer';
-import { useState } from 'react';
+import { useReducer, useState } from 'react';
+import { contactReducer, initialState } from "reducer/ContactReducer";
 import './App.css';
-
 
 function App() {
   const [showModal, setShowModal] = useState<boolean>(false);
+  const [state, dispatch] = useReducer(contactReducer, initialState);
+
   return (
     <div className="App">
-      <ContactCard setShowModal={setShowModal} />
-      <ModalContainer showModal={showModal} setShowModal={setShowModal} />
+      <ContactCard state={state} setShowModal={setShowModal} />
+      <ModalContainer
+        dispatch={dispatch}
+        showModal={showModal}
+        setShowModal={setShowModal}
+      />
     </div>
   );
 }
