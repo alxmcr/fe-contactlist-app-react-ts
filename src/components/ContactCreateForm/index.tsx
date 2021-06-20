@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { ContactCreateFormProps, ContactType } from "types/AppTypes/AppTypes";
 import "./ContactCreateForm.styles.css";
 
-export const ContactCreateForm = ({ dispatch }: ContactCreateFormProps) => {
+export const ContactCreateForm = ({
+    dispatch, setShowModal
+}: ContactCreateFormProps) => {
     const [name, setName] = useState<string>("");
     const [phone, setPhone] = useState<string>("");
     const handlerName = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -15,7 +17,10 @@ export const ContactCreateForm = ({ dispatch }: ContactCreateFormProps) => {
         e.preventDefault();
         const id = `Contact-${Math.floor(Math.random() * 77777)}`;
         const newContact: ContactType = { id, name, phone }
+        setName("");
+        setPhone("");
         dispatch({ type: "add", payload: newContact })
+        setShowModal(false);
     }
     return (
         <form className="modal__form" onSubmit={handleCreateContact}>
@@ -26,6 +31,7 @@ export const ContactCreateForm = ({ dispatch }: ContactCreateFormProps) => {
                     id="name"
                     name="name"
                     placeholder="Enter some name"
+                    value={name}
                     onChange={handlerName}
                     required
                 />
@@ -37,6 +43,7 @@ export const ContactCreateForm = ({ dispatch }: ContactCreateFormProps) => {
                     id="phone"
                     name="phone"
                     placeholder="Enter some phone number"
+                    value={phone}
                     onChange={handlerPhone}
                     required
                 />

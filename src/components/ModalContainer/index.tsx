@@ -14,7 +14,10 @@ export const ModalContainer = ({
     return (
         <section className={classContainer} id="container-modal-info">
             <ModalContact setShowModal={setShowModal}>
-                <ContactCreateForm dispatch={dispatch} />
+                <ContactCreateForm
+                    dispatch={dispatch}
+                    setShowModal={setShowModal}
+                />
             </ModalContact>
         </section>
     )

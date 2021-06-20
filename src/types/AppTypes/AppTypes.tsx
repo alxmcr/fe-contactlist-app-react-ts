@@ -26,6 +26,7 @@ export type ModalContainerProps = {
 
 export type ContactCreateFormProps = {
     dispatch: React.Dispatch<ACTION_TYPES>
+    setShowModal: (showModal: boolean) => void
 }
 
 export type ContactsProps = {
