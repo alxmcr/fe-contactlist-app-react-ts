@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <ContactCard setShowModal={setShowModal} />
-      <ModalContainer showModal={showModal} />
+      <ModalContainer showModal={showModal} setShowModal={setShowModal} />
     </div>
   );
 }

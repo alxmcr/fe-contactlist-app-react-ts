@@ -18,6 +18,7 @@ export type ContactCardProps = {
 }
 export type ModalContainerProps = {
     showModal: boolean
+    setShowModal: (showModal: boolean) => void
 }
 
 export type ContactsProps = {
@@ -26,4 +27,5 @@ export type ContactsProps = {
 
 export type ModalContactProps = {
     children: React.ReactNode
+    setShowModal: (showModal: boolean) => void
 }
