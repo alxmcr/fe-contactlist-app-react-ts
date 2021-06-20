@@ -4,7 +4,6 @@ export type ContactType = {
     id: string
     name: string
     phone: string
-    photo: string
 }
 
 export type ContactsState = {

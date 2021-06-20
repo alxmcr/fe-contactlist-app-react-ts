@@ -13,25 +13,21 @@ export const useContacts = () => {
                 id: "contact-001",
                 name: "Adam Gates",
                 phone: "+89 45648971",
-                photo: "https://randomuser.me/api/portraits/men/41.jpg"
             },
             {
                 id: "contact-002",
                 name: "Julia Hedges",
                 phone: "+45 82121554",
-                photo: "https://randomuser.me/api/portraits/women/41.jpg"
             },
             {
                 id: "contact-003",
                 name: "Victor Mattz",
                 phone: "+87 76576543",
-                photo: "https://randomuser.me/api/portraits/men/15.jpg"
             },
             {
                 id: "contact-004",
                 name: "Jennifer Fretz",
                 phone: "+25 36898795",
-                photo: "https://randomuser.me/api/portraits/women/15.jpg"
             }
         ]
         setContacts(contactList);
