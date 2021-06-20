@@ -16,10 +16,6 @@ export const ModalContact = ({ children, setShowModal }: ModalContactProps) => {
                 </button>
             </div>
             <div className="modal__body">
-                <p className="modal__description">Your session has expired.</p>
-                <p className="modal__details">Enter your password to pick up where you left off</p>
-            </div>
-            <div className="modal__body">
                 {children}
             </div>
         </div>
