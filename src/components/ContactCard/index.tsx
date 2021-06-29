@@ -4,10 +4,7 @@ import { ContactCardProps } from "types/AppTypes/AppTypes";
 import './ContactCard.styles.css';
 
 export const ContactCard = ({ state, setShowModal }: ContactCardProps) => {
-    const handleShowModal = () => {
-        console.log("Add..");
-        setShowModal(true);
-    }
+    const handleShowModal = () => setShowModal(true);
 
     return (
         <div className="contacts">
