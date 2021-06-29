@@ -37,14 +37,17 @@ export const ContactCreateForm = ({
                 />
             </div>
             <div className="modal__inputgroup">
-                <label htmlFor="phone" className="modal__label">Phone:</label>
-                <input type="text"
+                <label
+                    htmlFor="phone"
+                    className="modal__label">Phone (Format: 123-456-78901):</label>
+                <input type="tel"
                     className="modal__input"
                     id="phone"
                     name="phone"
-                    placeholder="Enter some phone number"
+                    placeholder="Enter some phone number:"
                     value={phone}
                     onChange={handlerPhone}
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{5}"
                     required
                 />
             </div>
