@@ -22,7 +22,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd weather-app
+  cd contactlist-ts-app
 ```
 
 Install dependencies
