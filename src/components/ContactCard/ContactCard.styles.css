@@ -1,5 +1,6 @@
 .contacts {
   --height-contacts: 26rem;
+  --color-icon: #01aefe;
   background-color: #e3f0f4;
   border-radius: 0.5rem;
   height: var(--height-contacts);
@@ -26,7 +27,7 @@
 }
 
 .contacts__body::-webkit-scrollbar-thumb {
-  background-color: rgb(1, 174, 254);
+  background-color: var(--color-icon);
 }
 
 .contacts__header {
@@ -38,4 +39,51 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.contacts__btn {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+}
+
+.contacts__icon {
+  border-radius: 50%;
+  color: var(--color-icon);
+  display: block;
+}
+
+.contacts__icon--plus {
+  color: var(--color-icon);
+  height: 1.7rem;
+  width: 1.9rem;
+}
+
+.contacts__icon--search {
+  color: #fff;
+  background-color: var(--color-icon);
+  padding: 0.5rem;
+}
+
+.contacts__input {
+  background-color: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  display: block;
+  outline: none;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.contacts__label {
+  font-size: 0.75rem;
+}
+
+.contacts__search {
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  padding: 0.25rem;
 }
