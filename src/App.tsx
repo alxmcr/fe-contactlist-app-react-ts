@@ -10,7 +10,11 @@ function App() {
 
   return (
     <div className="App">
-      <ContactCard state={state} setShowModal={setShowModal} />
+      <ContactCard
+        state={state}
+        setShowModal={setShowModal}
+      />
+      <small className="App__attribution">Thanks! Icons by Font-Aweasome, Favicon by Kiran Shastry, and Photo by Lum3n from Pexels.</small>
       <ModalContainer
         dispatch={dispatch}
         showModal={showModal}
