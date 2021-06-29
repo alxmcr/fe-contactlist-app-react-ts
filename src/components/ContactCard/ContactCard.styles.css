@@ -1,16 +1,16 @@
 .contacts {
+  --height-contacts: 26rem;
   background-color: #e3f0f4;
   border-radius: 0.5rem;
-  height: 22rem;
+  height: var(--height-contacts);
   padding: 0 2rem;
-  width: 20rem;
 }
 
 .contacts__body {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
-  height: 11rem;
+  height: calc(var(--height-contacts) / 2);
   overflow: auto;
 }
 
