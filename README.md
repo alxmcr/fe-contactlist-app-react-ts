@@ -43,7 +43,9 @@ HTML, CSS, CSS Flex Layout, JavaScript, React.js, React Hooks, and Typescript.
 
 ## Screenshots
 
-![App Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1624987853/Portfolio/your-contact-list-app/contact-list-app-example_fhvpnf.png)
+![Screenshot: List of Contacts](https://res.cloudinary.com/images-alex-projects/image/upload/v1625011375/Portfolio/your-contact-list-app/contact-list-app-example_zahqbq.png)
+
+![Screenshot: Modal - Create Contact](https://res.cloudinary.com/images-alex-projects/image/upload/v1625011124/Portfolio/your-contact-list-app/contact-list-modal_odgqnp.png)
 
 ## Demo
 
